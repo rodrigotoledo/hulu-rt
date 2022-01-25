@@ -31,8 +31,30 @@ bundle add faker tailwindcss-rails rails_heroicon
 rails tailwindcss:install
 ```
 
+in your development, test environments
+
+```
+gem 'rspec-rails', '~> 5.0.0'
+gem 'guard-rspec', require: false
+```
+
+and finally install
+
+```
+rails generate rspec:install
+bundle exec guard init rspec
+```
+
 ### Live reload the project
 
 ```
 bin/dev
+```
+
+and access http://localhost:30000
+
+### Coding with test
+
+```
+bundle exec guard
 ```
