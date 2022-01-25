@@ -1,0 +1,8 @@
+<nav class="relative">
+  <div class="flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
+  <% navbar_requests.map do |request_item| %>
+    <h2 class="last:pr-24 curso-pointer transition duration-100 hover:scale-125 hover:text-white active:text-red-500"><%=request_item[:title]%></h2>
+  <% end %>
+  </div>
+  <div class="absolute" />
+</nav>

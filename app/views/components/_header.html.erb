@@ -1,0 +1,11 @@
+<header class="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
+  <div class="flex flex-grow justify-evenly max-w-2xl">
+    <%= render 'components/header_item', title: 'HOME', icon: 'Home' %>
+    <%= render 'components/header_item', title: 'TRENDING', icon: 'lightning-bolt' %>
+    <%= render 'components/header_item', title: 'VERIFIED', icon: 'badge-check' %>
+    <%= render 'components/header_item', title: 'COLLECTIONS', icon: 'Collection' %>
+    <%= render 'components/header_item', title: 'SEARCH', icon: 'Search' %>
+    <%= render 'components/header_item', title: 'ACCOUNT', icon: 'User' %>
+  </div>
+  <%=image_tag 'hulu-white.png', width: 200, height: 100, class: 'object-contain' %>
+</header>
